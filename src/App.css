@@ -1,0 +1,315 @@
+@import "tailwindcss";
+/* global */
+@font-face {
+  font-family: 'bold';
+  src:local('bold'), url('./fonts/Poppins/Poppins-Bold.ttf');
+ 
+}
+@font-face {
+  font-family: 'normal';
+  src:local('normal') , url('./fonts/Poppins/Poppins-ExtraLight.ttf')
+}
+:root{
+  --bold:'bold';
+  --normal:'normal'
+}
+
+*{
+  @apply box-border m-0 p-0 font-[--normal]
+  
+}
+
+body{
+  @apply bg-[#222831]  
+}
+
+
+/* home */
+
+header{
+ 
+  @apply flex justify-between items-center pt-[48px] pb-[48px]
+  pl-[96px] pr-[96px] text-[#EEEEEE]
+}
+header h1{
+@apply font-[700] text-[24px]   font-['bold']
+
+}
+header ul {
+  @apply list-none flex gap-x-10
+}
+header ul li{
+  @apply font-[400] text-[18px]
+}
+section{
+  @apply flex items-center  gap-x-[81px] mt-[202px] ml-[180px] justify-center
+}
+section .text{
+  @apply w-[586px] h-[287px] relative
+}
+section .text .pointer{
+  @apply w-[89.96181823967771px] h-[221.6897945293664]
+  rotate-[-169.51] absolute -ml-[97.96px] mt-[100px]
+  
+}
+section .text h2{
+  @apply text-[96px] font-[700] text-[#EEEEEE] font-['bold']
+}
+section .text h2 span{
+  @apply text-[#00ADB5]
+}
+section .text .btns{
+  @apply flex gap-3 items-center mt-[48px]
+}
+section .text .btns button{
+  @apply pt-[10px] pb-[10px] pr-[32px] pl-[32px]
+  rounded-[24px] bg-[#00ADB5] text-[#EEEEEE] text-[18px] font-[700]
+}
+section .text .btns button:last-child{
+  @apply flex items-center gap-2 bg-[#393E46BF]
+}
+section .text .pointerDown{
+  @apply w-[96px] h-[96px] text-[#EEEEEEBF] mt-[243px]
+  ml-[284px]
+}
+.image{
+  background-image: url('./assets/Home/doodles\ mixed\ round.png');
+  background-size: cover;
+  @apply w-[514px] h-[514px] 
+}
+.image img{
+  @apply w-[400px] h-[472.6548767089844px] mt-[183px]
+}
+ /* Home Mobiles*/
+ header{
+  @apply max-md:pl-[10px] max-md:pr-[10px]
+  max-md:flex-col max-md:gap-y-5
+ }
+ section{
+  @apply max-md:flex-col-reverse 
+ }
+section .text{
+  @apply max-md:mt-[50px]
+}
+section .image{
+  @apply max-md:w-[300px] max-md:h-[400px]
+}
+section .image img{
+  @apply max-md:w-[200px] max-md:h-[250px]
+}
+section .text h2
+{
+  @apply max-md:text-[30px]
+}
+/* About */
+.about {
+  @apply mt-[500px] flex items-center
+}
+.about .text{
+  @apply ml-[96px]  relative
+}
+.about .text .sing{
+  @apply absolute -top-[121px]
+}
+.about .text .lamb{
+  @apply absolute top-[8.86px] left-[320px]
+  -rotate-[14.82]
+}
+.about .text .pointerTop{
+  @apply ml-[257px] mt-[65px]
+  -rotate-[163.55]
+}
+
+.about .text h2{
+  @apply text-[64px] font-[700] text-[#EEEEEE] font-['bold']
+}
+.about .text h2 span{
+  @apply text-[#00ADB5]
+}
+.about .text p{
+  @apply text-[18px] font-[400] text-[#EEEEEEBF]
+  w-[389px] h-[189px] 
+}
+.about .text p span{
+  @apply text-[#EEEEEE] font-[700]
+}
+.about .image{
+  background-image: url('./assets/About/doodle\ items.png');
+  background-size: cover;
+  @apply w-[665.3333129882812px] h-[499px]
+  ml-[181px]
+
+}
+.about .image img{
+  @apply w-[412.6773681640625px] h-[353.1433410644531px]
+   mt-[183px] ml-[108px]
+}
+.about .image img:last-child{
+  @apply w-[348px] h-[24px] -mt-1
+}
+/* About Mobiles */
+.about{
+  @apply max-md:flex-col-reverse
+}
+.about .text {
+  @apply max-md:mt-[80px]
+}
+.about .text h2{
+    @apply max-md:text-[30px] 
+}
+.about .image img{
+  @apply max-md:w-[200px] max-md:h-[200px]
+      max-md:mt-[50px] 
+
+}
+.about .image{
+    @apply max-md:w-[400px] max-md:h-[200px]
+
+
+}
+.about .image img:last-child{
+   @apply max-md:w-[248px] 
+
+}
+/* MyJobs */
+.MyJobs{
+  background-image: url('./assets/About/doodle\ items.png');
+  @apply mt-[256px] flex items-center justify-center bg-repeat
+  
+
+}
+
+.MyJobs .works h2{
+  @apply text-[64px] text-[#EEEEEE] font-[700] mt-[268px] font-['bold']
+
+}
+.MyJobs .works h2 span{
+  @apply text-[#00ADB5]
+}
+.MyJobs .works ul {
+  @apply flex list-none gap-[10px] mt-[10px]
+}
+.MyJobs .works ul li{
+  @apply rounded-[24px] font-[700] text-[18px]
+  text-[#EEEEEE] bg-[#393E4680] pl-5 pr-5
+}
+.MyJobs .works ul li:first-child{
+  @apply bg-[#00ADB5]
+}
+
+.MyJobs .projects{
+  @apply flex gap-10 mt-[48px]
+  mb-[300px]
+}
+.MyJobs .projects .box{
+  @apply w-[368px] h-[280px]
+  bg-[#393E4680] flex items-center justify-center
+  rounded-[16px]
+}
+.MyJobs .projects .box img{
+  @apply w-[265px] h-[158px]
+}
+/* Myjobs Mobiles */
+.MyJobs .works h2{
+  @apply max-md:text-[30px]
+}
+.MyJobs .projects{
+  @apply max-md:flex-col
+}
+.MyJobs .projects .box{
+  @apply max-md:w-full
+}
+/* Contact */
+.contact{
+  @apply mt-[256px] flex items-center  ml-[96px]
+}
+.contact .text {
+  @apply relative;
+}
+.contact .text h2{
+  @apply text-[64px] font-[700] leading-[80px]
+  text-[#EEEEEE]
+  w-[600px]
+  h-[160px]
+  font-['bold']
+}
+.contact .text h2 span{
+  @apply text-[#00ADB5]
+}
+.contact .text .img img{
+@apply w-[255.369140625px] h-[348px]
+ml-[250px]
+}
+.contact .text .pointerDown{
+  @apply absolute left-[50px] top-1/2 rotate-[30]
+}
+.contact .data{
+  @apply ml-[48px] relative
+}
+.contact .data form > div{
+@apply flex gap-10
+}
+.contact .data form label{
+  @apply font-[700] text-[18px] text-[#EEEEEE] font-['bold']
+}
+.contact .data form input{
+  @apply rounded-[16px] p-3
+  bg-[#393E4680] border-none outline-none placeholder:text-[#EEEEEE80]
+  mb-5
+}
+.contact .data form textarea{
+  @apply w-[450px] h-[280px] bg-[#393E4680] rounded-[16px]
+  border-none outline-none mt-3 p-4 placeholder:text-[#EEEEEE80]
+}
+.contact .data form button{
+  @apply flex gap-2 items-center bg-[#00ADB5] rounded-[24px] text-[#EEEEEE]
+  text-[18px] pl-5 pr-5 pt-2 pb-2 mt-3
+}
+.contact .data .Keyboard{
+  @apply absolute -top-[192px] left-[78px]
+}
+.contact .data .message{
+  @apply absolute -bottom-[80px] right-10
+}
+/* Contact Mobiles */
+.contact{
+  @apply max-md:flex-col
+}
+.contact  .data {
+  @apply max-md:mt-[60px]
+}
+.contact .text h2{
+  @apply max-md:text-[30px] max-md:w-[200px] 
+}
+
+.contact .text .img img{
+  @apply max-md:hidden
+}
+.contact .data form > div{
+@apply max-md:flex-col
+}
+.contact  .data form textarea{
+  @apply max-md:w-[200px]
+}
+/* Footer */
+footer{
+  @apply mt-[256px] 
+}
+footer ul ,footer ul li {
+  @apply flex items-center justify-center  
+}
+footer ul li{
+   @apply flex items-center text-[#EEEEEE]  text-[18px]
+   ml-5 gap-x-2
+}
+footer .media{
+  @apply flex justify-center items-center mt-8
+ gap-x-3 
+}
+footer .media .icons{
+  @apply p-2 bg-[#393E46] rounded-full text-[#EEEEEEBF]
+}
+footer p{
+  @apply text-right  text-[#EEEEEEBF] text-[18px]
+  font-[400] p-7 max-md:text-center
+}
