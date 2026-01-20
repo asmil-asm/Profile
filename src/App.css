@@ -308,7 +308,7 @@ footer ul ,footer ul li {
 }
 footer ul li{
    @apply flex items-center text-[#EEEEEE]  text-[18px]
-   ml-5 gap-x-2
+   ml-5 gap-x-2 max-md:text-[12px]
 }
 footer .media{
   @apply flex justify-center items-center mt-8
