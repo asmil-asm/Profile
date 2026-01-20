@@ -83,13 +83,13 @@ section .text .pointerDown{
  /* Home Mobiles*/
  header{
   @apply max-md:pl-[10px] max-md:pr-[10px]
-  max-md:flex-col max-md:gap-y-5
+  max-md:flex-col max-md:gap-y-5 max-md:ml-[50px]
  }
  section{
   @apply max-md:flex-col-reverse 
  }
 section .text{
-  @apply max-md:mt-[50px]
+  @apply max-md:mt-[50px] max-md:ml-[150px]
 }
 section .image{
   @apply max-md:w-[300px] max-md:h-[400px]
@@ -174,10 +174,11 @@ section .text h2
 /* MyJobs */
 .MyJobs{
   background-image: url('./assets/About/doodle\ items.png');
-  @apply mt-[256px] flex items-center justify-center bg-repeat
+  @apply mt-[256px] flex items-center justify-center
   
 
 }
+
 
 .MyJobs .works h2{
   @apply text-[64px] text-[#EEEEEE] font-[700] mt-[268px] font-['bold']
@@ -210,8 +211,15 @@ section .text h2
   @apply w-[265px] h-[158px]
 }
 /* Myjobs Mobiles */
+.MyJobs{
+  @apply max-md:ml-[100px] max-md:bg-none
+}
 .MyJobs .works h2{
   @apply max-md:text-[30px]
+}
+.MyJobs .works ul li{
+    @apply max-md:text-[12px]
+
 }
 .MyJobs .projects{
   @apply max-md:flex-col
@@ -293,7 +301,7 @@ ml-[250px]
 }
 /* Footer */
 footer{
-  @apply mt-[256px] 
+  @apply mt-[256px] max-md:ml-[50px]
 }
 footer ul ,footer ul li {
   @apply flex items-center justify-center  
