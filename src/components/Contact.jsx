@@ -3,12 +3,13 @@ import image2 from '../assets/contact/Vector 186.png'
 import image3 from '../assets/contact/keyboard.png'
 import image4 from '../assets/contact/mail.png'
 import { FiSend } from "react-icons/fi";
-
+import { useTranslation } from 'react-i18next';
 const Contact = () => {
+    const {t}=useTranslation()
   return (
     <div className='contact'>
 <div className="text">
-    <h2>Got a project in <span>mind?</span></h2>
+    <h2>{t('Got a project in mind')}?</h2>
 <div className='img' >
     <img src={image1} alt="not found" />
 </div>
@@ -20,21 +21,21 @@ const Contact = () => {
 
     <div>
 <div>
-    <label>Your name</label>
+    <label>{t('Your name')}</label>
     <br/>
-    <input type="text" placeholder='Name' />
+    <input type="text" placeholder={t('Name')} />
 </div>
 <div>
-      <label>Your email</label>
+      <label>{t('Your email')}</label>
       <br/>
-    <input type="email" placeholder='Email' />
+    <input type="email" placeholder={t('Email')} />
 </div>
 
     </div>
-    <label>Your Message</label>
+    <label>{t('Your Message')}</label>
     <br/>
-    <textarea placeholder='Message'/>
-    <button>Send Message <FiSend/></button>
+    <textarea placeholder={t('Message')}/>
+    <button>{t('Send Message')}<FiSend/></button>
 
 </form>
 <img className='message' src={image4} alt="not found" />

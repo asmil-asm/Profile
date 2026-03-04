@@ -5,16 +5,17 @@ import { LuFacebook } from "react-icons/lu";
 import { IoLogoInstagram } from "react-icons/io";
 import { CiTwitter } from "react-icons/ci";
 import { AiOutlineYoutube } from "react-icons/ai";
-
+import { useTranslation } from "react-i18next";
 
 
 const Footer = () => {
+  const {t}=useTranslation()
   return (
    <footer>
     <ul>
-    <li><FiHome/> Home</li>
-    <li><BsPerson/> About me</li>
-    <li><BsTelephone/> Contact</li>
+    <li><FiHome/> {t('Home')}</li>
+    <li><BsPerson/> {t('About me')}</li>
+    <li><BsTelephone/>{t('Contact')}</li>
     </ul>
     <div className="media">
     <div className="icons">
@@ -33,7 +34,7 @@ const Footer = () => {
 
     </div>
     </div>
-    <p>Terms of Service - Privacy Policy</p>
+    <p>{t('textFooter')}</p>
 
    </footer>
   )

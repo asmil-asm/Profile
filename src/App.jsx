@@ -4,17 +4,20 @@ import About from './components/About'
 import Myjobs from './components/Myjobs'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Events from './components/Events'
 function App() {
-
+ 
   return (
-    <div className="main">
+    <>
+<Events/>      
 <Home/>
 <About/>
 <Myjobs/>
 <Contact/>
 <Footer/>
+</>
      
-    </div>
+    
   )
 }
 
